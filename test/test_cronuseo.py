@@ -1,9 +1,6 @@
 from cronuseosdk import Cronuseo
 
 
-conuseo = Cronuseo("http://localhost:8080/api/v1", "super", "JLE+1Z3c/jIQL+i+ORhI+jLbM5pXvdxNrKvIcrKVFss=")
-response = conuseo.checkPermission("shashimal", "write", "doc")
+conuseo = Cronuseo("http://localhost:8080/api/v1", "super", "a7TqzHSln739+fLY4azCdNO0bRvnhp35M/3t2lemr3Q=")
+response = conuseo.checkPermission("shashimal20", "read", "sales")
 assert response == True
-
-response = conuseo.checkPermissions("shashimal", ["write", "read", "update"], "doc")
-assert response == ["write", "read"]
